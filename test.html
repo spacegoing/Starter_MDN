@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <style>
+        p {
+            text-indent: 0.5em;
+            font-family: Courier;
+            text-align: center;
+            color: red;
+        }
+
+        body {
+            color: red;
+            text-align: center;
+        }
+
+        ;
+        /* div {
+        width: 100px;
+        background: #AAA;
+        margin: 10px auto;
+        } */
+    </style>
+</head>
+
+<body>
+    <div>
+        apifjipaej
+    </div>
+    <span>apiejfepai</span>
+    <div>
+        <p style="color:aqua">
+            pafeijp跑完我积分怕杰尔夫皮哦啊二姐夫怕覅文件按二级佛爱金额佛怕积分破案件佛怕杰尔夫破案件而佛我及哦啊二级佛扒鸡pafeijp跑完我积分怕杰尔夫皮哦啊二姐夫怕覅文件按二级佛爱金额佛怕积分破案件佛怕杰尔夫破案件而佛我及哦啊二级佛扒鸡
+        </p>
+    </div>
+    <td class="answercell">
+        <div class="post-text" itemprop="text">
+            <p>you are calculating the specificity the wrong way.</p>
+
+            <p>lets see:</p>
+
+            <p>you have 2 rules separated by a comma <code>,</code> the first one has 1 ID(<code>box1</code>), 1 class(<code>.spec2</code>) and 2 elements <code>div</code> and <code>p</code>, which makes(0,1,1,2)</p>
+
+            <p>the second one has 2 IDs and 1 element, which makes (0,2,0,1)</p>
+
+            <pre class="lang-css prettyprint prettyprinted"><code><span class="pun">#</span><span class="pln">box1 div</span><span class="pun">.</span><span class="pln">spec2 p</span><span class="pun">,</span><span class="pln">
+    </span><span class="pun">#</span><span class="pln">box1 </span><span class="pun">#</span><span class="pln">box2 p </span><span class="pun">{</span><span class="pln">
+        </span><span class="kwd">color</span><span class="pun">:</span><span class="pln"> blue</span><span class="pun">;</span><span class="pln">
+    </span><span class="pun">}</span></code></pre>
+
+            <p>This one is exactly like your second rule above (0,2,0,1), which means it won't do anything because the first rule(0,1,1,2) is more specific than this one.
+            </p>
+
+            <pre class="default prettyprint prettyprinted"><code><span class="com">#box1 #box3 p {</span><span class="pln">
+    color</span><span class="pun">:</span><span class="pln"> green</span><span class="pun">;</span><span class="pln">
+</span><span class="pun">}</span></code></pre>
+
+            <p>You can always calculate your specificity <a href="https://specificity.keegan.st/" rel="nofollow noreferrer">here</a></p>
+        </div>
+        <table class="fw">
+            <tbody>
+                <tr>
+                    <td class="vt">
+                        <div class="post-menu"><a href="/a/43953398/4062451" title="short permalink to this answer" class="short-link" id="link-post-43953398">share</a><span class="lsep">|</span><a href="/posts/43953398/edit" class="suggest-edit-post" title="revise and improve this post">edit</a><span class="lsep">|</span><a href="#" class="flag-post-link" title="flag this post for serious problems or moderator attention" data-postid="43953398">flag</a></div>
+                    </td>
+
+
+
+                    <td align="right" class="post-signature">
+
+
+                        <div class="user-info user-hover">
+                            <div class="user-action-time">
+                                answered <span title="2017-05-13 12:54:37Z" class="relativetime">4 mins ago</span>
+                            </div>
+                            <div class="user-gravatar32">
+                                <a href="/users/3448527/dippas">
+                                    <div class="gravatar-wrapper-32"><img src="https://i.stack.imgur.com/r2MY3.jpg?s=32&amp;g=1" alt="" width="32" height="32"></div>
+                                </a>
+                            </div>
+                            <div class="user-details">
+                                <a href="/users/3448527/dippas">dippas</a>
+                                <div class="-flair">
+                                    <span class="reputation-score" title="reputation score 29,874" dir="ltr">29.9k</span><span title="10 gold badges"><span class="badge1"></span><span class="badgecount">10</span></span><span title="30 silver badges"><span class="badge2"></span><span class="badgecount">30</span></span><span title="57 bronze badges"><span class="badge3"></span><span class="badgecount">57</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </td>
+</body>
+
+</html>
